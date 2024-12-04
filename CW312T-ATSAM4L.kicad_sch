@@ -5381,6 +5381,12 @@
 		(uuid "0abeead3-e156-4da6-8454-2caf76554144")
 	)
 	(junction
+		(at 218.44 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b6544d9-1e6b-43ef-aae0-4a0bc8d7c49e")
+	)
+	(junction
 		(at 107.95 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5553,12 +5559,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd32f587-2b7e-413a-b36b-014edfa7e50f")
-	)
-	(junction
-		(at 229.87 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cdf09d59-99a7-4cf9-8363-9a5c31945cbd")
 	)
 	(junction
 		(at 31.75 77.47)
@@ -5854,7 +5854,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 90.17) (xy 218.44 80.01)
+			(xy 218.44 90.17) (xy 218.44 85.09)
 		)
 		(stroke
 			(width 0)
@@ -6071,6 +6071,16 @@
 			(type default)
 		)
 		(uuid "1dd6f3b9-ba41-4d1c-989b-6facf3c5588b")
+	)
+	(wire
+		(pts
+			(xy 218.44 85.09) (xy 229.87 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1def35a0-29cd-45cf-ac19-87ce8d59ea03")
 	)
 	(wire
 		(pts
@@ -6424,6 +6434,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 85.09) (xy 218.44 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5211fd2c-6f44-4d24-a49d-242fdba4662a")
+	)
+	(wire
+		(pts
 			(xy 224.79 71.12) (xy 231.14 71.12)
 		)
 		(stroke
@@ -6501,6 +6521,16 @@
 			(type default)
 		)
 		(uuid "5a1aa238-337a-43ff-85be-f2a9eb4f5da2")
+	)
+	(wire
+		(pts
+			(xy 215.9 85.09) (xy 218.44 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a58d53b-75a0-4e05-907f-93216d18b503")
 	)
 	(wire
 		(pts
@@ -7444,16 +7474,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 85.09) (xy 229.87 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d56020bb-4862-46a3-b1c0-99a6e18053d6")
-	)
-	(wire
-		(pts
 			(xy 83.82 62.23) (xy 95.25 62.23)
 		)
 		(stroke
@@ -7744,16 +7764,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 81.28) (xy 229.87 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6488a88-f90d-48ea-a761-cb2e1d1d21cd")
-	)
-	(wire
-		(pts
 			(xy 128.27 38.1) (xy 128.27 41.91)
 		)
 		(stroke
@@ -7812,25 +7822,43 @@
 		)
 		(uuid "fdde52a0-5e73-4e1f-90d3-11fdf46d1e71")
 	)
-	(text "JP1 to use internal LDO on SAM4L\n"
+	(text_box "JP1 to use internal LDO om SAM4L"
 		(exclude_from_sim no)
-		(at 263.652 102.108 0)
+		(at 245.11 97.79 0)
+		(size 36.83 3.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify top)
 		)
-		(uuid "58a8579e-87b0-490a-88bd-e7c17e8d13fe")
+		(uuid "09836247-2ab3-4e26-9857-bdbdf0872c2e")
 	)
-	(text "C3, C4, J1 not mounted on default build. \nFor USB build mount C3/C4/J1. "
+	(text_box "C3, C4, and J1 not mounted on default build. \nFor USB build mount C3, C4, and J1"
 		(exclude_from_sim no)
-		(at 87.884 191.008 0)
+		(at 59.69 185.42 0)
+		(size 46.99 5.08)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify top)
 		)
-		(uuid "dea3c8b9-9a84-46d0-b61a-74d238e3701e")
+		(uuid "f3eb6533-9ee6-42ec-8ff4-31ea6d8bdde5")
 	)
 	(label "SHUNTL"
 		(at 95.25 59.69 180)
@@ -8809,71 +8837,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 229.87 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1cf20943-8347-4bf8-89be-a3e66043f6b3")
-		(property "Reference" "#PWR09"
-			(at 229.87 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 229.87 77.216 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 229.87 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 229.87 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56afd75d-131d-4daa-8ee4-a0398313ac45")
-		)
-		(instances
-			(project ""
-				(path "/75376c85-aeac-4546-a639-110a257841a4"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Silkscreen_Symbols:Pb_Free")
 		(at -35.56 160.02 0)
 		(unit 1)
@@ -9597,7 +9560,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "64b9e3cc-d61e-426a-a672-671e4a677961")
 		(property "Reference" "C3"
 			(at 131.826 179.832 90)
@@ -10326,7 +10289,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7e65aa88-4b96-4599-bfc4-edbf26c8c692")
 		(property "Reference" "C4"
 			(at 140.716 179.832 90)
@@ -11573,7 +11536,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ab4fb108-e2a8-44e4-aa00-bdc8fcba4046")
 		(property "Reference" "J1"
 			(at 99.822 147.574 0)
