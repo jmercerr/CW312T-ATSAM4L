@@ -10522,6 +10522,36 @@
 			)
 		)
 	)
+	(gr_line
+		(start 126.6 69.05)
+		(end 126.6 69.8)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "a428e51a-6e7f-4208-95ca-b10eebdd2022")
+	)
+	(gr_line
+		(start 149.6 69.05)
+		(end 149.6 69.8)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5cdc1895-be99-473f-8976-8399df6e48bc")
+	)
+	(gr_line
+		(start 151.6 69.05)
+		(end 151.6 69.8)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "910772df-2889-4b2d-ae18-501d74f5b1ae")
+	)
 	(gr_rect
 		(start 132.55 97.875)
 		(end 149.1 110.625)
@@ -10532,6 +10562,18 @@
 		(fill none)
 		(layer "F.SilkS")
 		(uuid "c295dcd7-e8ba-4fb5-854b-7fbc2142a135")
+	)
+	(gr_text "RST"
+		(at 125.95 72.6 -90)
+		(layer "B.SilkS")
+		(uuid "1edfaa47-ad21-42d8-b277-5c69153f45aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "NewAE Technology Inc.\nNAE-CW312T-SAM4L\nRoHS / Pb Free"
 		(at 141.2 88.75 0)
@@ -10559,6 +10601,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "3.3V"
+		(at 150.25 73.3 90)
+		(layer "F.SilkS")
+		(uuid "32cbe511-c9fb-40ca-b9ad-de6b5a4fe740")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "USB"
 		(at 132.45 109 0)
 		(layer "F.SilkS")
@@ -10568,6 +10622,18 @@
 				(size 1.5 1.5)
 				(thickness 0.3)
 				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "1.8V"
+		(at 152.25 73.3 90)
+		(layer "F.SilkS")
+		(uuid "94a37e7b-29d2-453a-8855-6d75e5cc75df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
